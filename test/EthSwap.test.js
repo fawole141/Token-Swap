@@ -31,7 +31,7 @@ describe('EthSwap deployment', async() =>{
 		
 		const name = await ethSwap.name()
 		assert.equal(name, 'EthSwap Instant Exchange')
-	})
+	}) 
 	it('contract has token', async() =>{
 			let token = await Token.new()
 			let ethSwap = await EthSwap.new()
